@@ -18,8 +18,6 @@ RUN npm install && \
     node src/main.js install-core-widgets && \
     chmod 0755 -R startscripts *
 
-# 4326: web UI
-# 4327: websocket
 EXPOSE 4326 4327
 
 VOLUME ["/opt/rcon-web-admin/db"]
