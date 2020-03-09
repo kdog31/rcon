@@ -21,7 +21,8 @@ With that you can follow the [Regular Instructions](https://github.com/lacaulac/
 Alternativly you may use a docker-compose.yml file to configure your container.
 
 #### Example docker-compose.yml file.
-```version: '3'
+```
+version: '3'
 services:
     rcon:
         image: kdog31/rcon
@@ -29,4 +30,5 @@ services:
             - "4326:4326"
             - "4327:4327"
         volumes:
-            - ./db:/opt/rcon-web-admin/db```
+            - ./db:/opt/rcon-web-admin/db
+```
